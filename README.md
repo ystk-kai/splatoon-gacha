@@ -140,7 +140,7 @@ npm run dev:tunnel
 #### 方法2: ダッシュボードから制御
 
 1. ダッシュボードの「外部公開設定」パネルを開く
-2. サービスを選択（Serveo.net推奨 / Localtunnel）
+2. サービスを選択（Ngrok推奨 / Cloudflare Tunnel / Localtunnel）
 3. 「接続開始」ボタンをクリック
 4. 生成された外部URLを視聴者に共有
 
@@ -148,48 +148,42 @@ npm run dev:tunnel
 
 | サービス | 速度 | 認証 | 特徴 |
 |---------|------|------|------|
-| **Serveo.net（推奨）** | ⭐⭐⭐⭐⭐ | 不要 | 高速・安定・認証不要 |
-| **Localtunnel** | ⭐⭐ | IP認証 | 完全無料・表示が遅い |
+| **Ngrok（推奨）** | ⭐⭐⭐⭐⭐ | アカウント登録 | 高速・安定・商用利用可能 |
+| **Cloudflare Tunnel** | ⭐⭐⭐⭐⭐ | アカウント登録 | 無料・高速・セキュア |
+| **Localtunnel** | ⭐⭐ | 不要 | 完全無料・簡単・不安定 |
 
-#### Serveo.net（推奨）
+#### Ngrok（推奨）
 
-- **高速表示**: SSH経由で軽量・高速
-- **認証不要**: URLにアクセスするだけ
-- **安定性**: 接続が安定している
-- **完全無料**: 制限なし
+- **高速表示**: 世界規模のエッジネットワーク
+- **安定性**: 商用サービスレベルの信頼性
+- **セキュリティ**: HTTPS/TLS暗号化
+- **無料プラン**: 月2GB転送量、同時2トンネル
 
-#### 視聴者への案内例（Serveo.net）
-
-```
-🎲 視聴者画面にアクセスできます！
-
-URL: https://xxxx.serveo.net/viewer
-
-【アクセス方法】
-① 上記URLをクリック
-② 直接視聴者画面が表示されます
+```bash
+# Ngrok使用例
+npm install -g ngrok
+ngrok http 3000
 ```
 
-#### Localtunnel（低速）
+#### Cloudflare Tunnel
 
-- **完全無料**: 帯域制限なし、時間制限なし
-- **IP認証が必要**: 配信者のIPアドレスをパスワード入力
-- **表示が遅い**: 画像・フォントの読み込みに時間がかかる
+- **完全無料**: 転送量制限なし
+- **高速**: Cloudflareの高速ネットワーク
+- **セキュリティ**: DDoS保護標準装備
+- **簡単設定**: CLIツールで簡単セットアップ
 
-#### 視聴者への案内例（Localtunnel）
-
+```bash
+# Cloudflare Tunnel使用例  
+npm install -g cloudflared
+cloudflared tunnel --url http://localhost:3000
 ```
-🎲 視聴者画面にアクセスできます！
 
-1. URL: https://xxxx.loca.lt/viewer
-2. パスワード: 123.456.789.012
+#### Localtunnel（簡易用途）
 
-【アクセス方法】
-① 上記URLをクリックしてアクセス
-② 「Tunnel Password:」の入力欄にパスワードを入力
-③ 「Click to Submit」をクリック
-④ 視聴者画面が表示されます
-```
+- **完全無料**: 登録不要・制限なし
+- **簡単**: インストール後すぐ利用可能
+- **制限**: 接続が不安定・速度制限あり
+- **用途**: テスト・一時的な共有のみ推奨
 
 #### 再接続について
 
@@ -203,6 +197,8 @@ URL: https://xxxx.serveo.net/viewer
 |------|------|
 | `/dashboard` | ガチャ実行・管理画面 |
 | `/overlay` | OBS用オーバーレイ画面 |
+| `/viewer` | 視聴者画面 |
+| `/widget` | ウィジェット画面 |
 | `/health` | サーバー状態確認 |
 | `/gacha-result` | ガチャ結果受信API（POST） |
 | `/ws` | WebSocket接続 |

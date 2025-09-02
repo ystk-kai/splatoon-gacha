@@ -94,8 +94,6 @@ npm run tunnel           # Localtunnel単体起動
 <type>(<scope>): <description>
 
 [optional body]
-
-[optional footer(s)]
 ```
 
 ### Type一覧
