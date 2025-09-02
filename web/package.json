@@ -1,0 +1,23 @@
+{
+  "name": "splatoon-gacha-web",
+  "version": "0.1.0",
+  "description": "Splatoon Gacha Web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js",
+    "test:e2e": "npx playwright test",
+    "test:e2e:headed": "npx playwright test --headed",
+    "install-playwright": "npx playwright install"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.0.0",
+    "@fastify/static": "^6.0.0",
+    "@fastify/websocket": "^7.0.0",
+    "dotenv": "^17.2.1",
+    "fastify": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
