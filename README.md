@@ -140,50 +140,18 @@ npm run dev:tunnel
 #### 方法2: ダッシュボードから制御
 
 1. ダッシュボードの「外部公開設定」パネルを開く
-2. サービスを選択（Ngrok推奨 / Cloudflare Tunnel / Localtunnel）
+2. サービスを選択（Bore推奨 / Serveo / Localhost.run / Localtunnel）
 3. 「接続開始」ボタンをクリック
 4. 生成された外部URLを視聴者に共有
 
-#### 利用可能サービス
+#### 対応サービス
 
-| サービス | 速度 | 認証 | 特徴 |
-|---------|------|------|------|
-| **Ngrok（推奨）** | ⭐⭐⭐⭐⭐ | アカウント登録 | 高速・安定・商用利用可能 |
-| **Cloudflare Tunnel** | ⭐⭐⭐⭐⭐ | アカウント登録 | 無料・高速・セキュア |
-| **Localtunnel** | ⭐⭐ | 不要 | 完全無料・簡単・不安定 |
-
-#### Ngrok（推奨）
-
-- **高速表示**: 世界規模のエッジネットワーク
-- **安定性**: 商用サービスレベルの信頼性
-- **セキュリティ**: HTTPS/TLS暗号化
-- **無料プラン**: 月2GB転送量、同時2トンネル
-
-```bash
-# Ngrok使用例
-npm install -g ngrok
-ngrok http 3000
-```
-
-#### Cloudflare Tunnel
-
-- **完全無料**: 転送量制限なし
-- **高速**: Cloudflareの高速ネットワーク
-- **セキュリティ**: DDoS保護標準装備
-- **簡単設定**: CLIツールで簡単セットアップ
-
-```bash
-# Cloudflare Tunnel使用例  
-npm install -g cloudflared
-cloudflared tunnel --url http://localhost:3000
-```
-
-#### Localtunnel（簡易用途）
-
-- **完全無料**: 登録不要・制限なし
-- **簡単**: インストール後すぐ利用可能
-- **制限**: 接続が不安定・速度制限あり
-- **用途**: テスト・一時的な共有のみ推奨
+| サービス | 認証 | 特徴 |
+|---------|------|------|
+| **Bore** | 不要 | 高速・安定（推奨） |
+| **Serveo** | 不要 | SSH経由・高速 |  
+| **Localhost.run** | 不要 | 簡単・QR対応 |
+| **Localtunnel** | IP認証 | 完全無料・不安定 |
 
 #### 再接続について
 
