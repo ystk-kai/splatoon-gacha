@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-splatoon-orange: #ff6600;
+  --color-splatoon-blue: #0088ff;
+  --color-splatoon-green: #00ff88;
+  --color-splatoon-purple: #8800ff;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .gacha-button {
+    @apply bg-gradient-to-r from-splatoon-orange to-splatoon-purple;
+    @apply text-white font-bold py-4 px-8 rounded-lg;
+    @apply transform transition-all duration-200;
+    @apply hover:scale-105 active:scale-95;
+    @apply shadow-lg hover:shadow-xl;
+  }
+  
+  .weapon-card {
+    @apply bg-gray-800 rounded-lg p-4;
+    @apply border-2 border-gray-700;
+    @apply transition-all duration-300;
+    @apply hover:border-splatoon-orange hover:shadow-lg;
+  }
+
+  .player-card {
+    @apply relative cursor-pointer transition-all duration-200 rounded-lg p-4 border-2;
+    @apply transform hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .player-card-unselected {
+    @apply border-gray-600 hover:border-gray-500 bg-gray-900/50;
+    @apply hover:shadow-md hover:bg-gray-900/70;
+  }
+
+  .player-card-selected {
+    @apply border-splatoon-orange bg-gradient-to-r from-orange-900/20 to-purple-900/20;
+    @apply shadow-lg shadow-orange-500/20;
+  }
+
+  .regacha-button {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600;
+    @apply text-white font-bold py-3 px-6 rounded-lg;
+    @apply transform transition-all duration-200;
+    @apply hover:scale-105 active:scale-95;
+    @apply shadow-lg hover:shadow-xl hover:from-purple-500 hover:to-pink-500;
+  }
+
+  .selection-indicator {
+    @apply absolute top-2 right-2 text-splatoon-orange;
+    @apply animate-pulse;
+  }
+
+  .player-count-button {
+    @apply py-2 px-4 rounded-lg text-sm font-medium transition-all;
+    @apply transform hover:scale-105 active:scale-95;
+  }
+
+  .player-count-button-selected {
+    @apply bg-splatoon-orange text-white shadow-lg;
+  }
+
+  .player-count-button-unselected {
+    @apply bg-gray-700 text-gray-300 hover:bg-gray-600;
+  }
+}
