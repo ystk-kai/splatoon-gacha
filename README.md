@@ -3,6 +3,8 @@
 Splatoon 配信用ランダム武器選択ツールです。  
 OBS でのオーバーレイ表示とガチャ機能を提供します。
 
+![dashboard](assets/dashboard.png)
+
 ## 概要
 
 このツールは以下の機能を提供します：
