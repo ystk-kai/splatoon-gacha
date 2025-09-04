@@ -1,0 +1,1388 @@
+{
+  "weapons": [
+    {
+      "id": "splattershot",
+      "name": "スプラシューター",
+      "nameEn": "Splattershot",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "hero_shot_replica",
+      "name": "ヒーローシューター レプリカ",
+      "nameEn": "Hero Shot Replica",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "tentatek_splattershot",
+      "name": "スプラシューターコラボ",
+      "nameEn": "Tentatek Splattershot",
+      "type": "shooter",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "order_shot_replica",
+      "name": "オーダーシューター レプリカ",
+      "nameEn": "Order Shot Replica",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "octo_shot_replica",
+      "name": "オクタシューター レプリカ",
+      "nameEn": "Octo Shot Replica",
+      "type": "shooter",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "glamorz_splattershot",
+      "name": "スプラシューター煌",
+      "nameEn": "Glamorz Splattershot",
+      "type": "shooter",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "96_gal",
+      "name": ".96ガロン",
+      "nameEn": ".96 Gal",
+      "type": "shooter",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "96_gal_deco",
+      "name": ".96ガロンデコ",
+      "nameEn": ".96 Gal Deco",
+      "type": "shooter",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "clawz_96_gal",
+      "name": ".96ガロン爪",
+      "nameEn": "Clawz .96 Gal",
+      "type": "shooter",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "splash_o_matic",
+      "name": "シャープマーカー",
+      "nameEn": "Splash-o-matic",
+      "type": "shooter",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "neo_splash_o_matic",
+      "name": "シャープマーカーネオ",
+      "nameEn": "Neo Splash-o-matic",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "splash_o_matic_gck_o",
+      "name": "シャープマーカーGECK",
+      "nameEn": "Splash-o-matic GCK-O",
+      "type": "shooter",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "splattershot_jr",
+      "name": "わかばシューター",
+      "nameEn": "Splattershot Jr.",
+      "type": "shooter",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "custom_splattershot_jr",
+      "name": "もみじシューター",
+      "nameEn": "Custom Splattershot Jr.",
+      "type": "shooter",
+      "subWeapon": "トーピード",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "52_gal",
+      "name": ".52ガロン",
+      "nameEn": ".52 Gal",
+      "type": "shooter",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "52_gal_deco",
+      "name": ".52ガロンデコ",
+      "nameEn": ".52 Gal Deco",
+      "type": "shooter",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "h_3_nozzlenose",
+      "name": "H3リールガン",
+      "nameEn": "H-3 Nozzlenose",
+      "type": "shooter",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "h_3_nozzlenose_d",
+      "name": "H3リールガンD",
+      "nameEn": "H-3 Nozzlenose D",
+      "type": "shooter",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "h_3_nozzlenose_vip_r",
+      "name": "H3リールガンSNAK",
+      "nameEn": "H-3 Nozzlenose VIP-R",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "l_3_nozzlenose",
+      "name": "L3リールガン",
+      "nameEn": "L-3 Nozzlenose",
+      "type": "shooter",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "l_3_nozzlenose_d",
+      "name": "L3リールガンD",
+      "nameEn": "L-3 Nozzlenose D",
+      "type": "shooter",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "glitterz_l_3_nozzlenose",
+      "name": "L3リールガン箔",
+      "nameEn": "Glitterz L-3 Nozzlenose",
+      "type": "shooter",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "n_zap_85",
+      "name": "N-ZAP85",
+      "nameEn": "N-ZAP '85",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "n_zap_89",
+      "name": "N-ZAP89",
+      "nameEn": "N-ZAP '89",
+      "type": "shooter",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "jet_squelcher",
+      "name": "ジェットスイーパー",
+      "nameEn": "Jet Squelcher",
+      "type": "shooter",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "custom_jet_squelcher",
+      "name": "ジェットスイーパーカスタム",
+      "nameEn": "Custom Jet Squelcher",
+      "type": "shooter",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "jet_squelcher_cob_r",
+      "name": "ジェットスイーパーCOBR",
+      "nameEn": "Jet Squelcher COB-R",
+      "type": "shooter",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "splattershot_pro",
+      "name": "プライムシューター",
+      "nameEn": "Splattershot Pro",
+      "type": "shooter",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "forge_splattershot_pro",
+      "name": "プライムシューターコラボ",
+      "nameEn": "Forge Splattershot Pro",
+      "type": "shooter",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "splattershot_pro_frz_n",
+      "name": "プライムシューターFRZN",
+      "nameEn": "Splattershot Pro FRZ-N",
+      "type": "shooter",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "マルチミサイル"
+    },
+    {
+      "id": "aerospray_mg",
+      "name": "プロモデラーMG",
+      "nameEn": "Aerospray MG",
+      "type": "shooter",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "aerospray_rg",
+      "name": "プロモデラーRG",
+      "nameEn": "Aerospray RG",
+      "type": "shooter",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "colorz_aerospray",
+      "name": "プロモデラー彩",
+      "nameEn": "Colorz Aerospray",
+      "type": "shooter",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "sploosh_o_matic",
+      "name": "ボールドマーカー",
+      "nameEn": "Sploosh-o-matic",
+      "type": "shooter",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "neo_sploosh_o_matic",
+      "name": "ボールドマーカーネオ",
+      "nameEn": "Neo Sploosh-o-matic",
+      "type": "shooter",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "squeezer",
+      "name": "ボトルガイザー",
+      "nameEn": "Squeezer",
+      "type": "shooter",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "foil_squeezer",
+      "name": "ボトルガイザーフォイル",
+      "nameEn": "Foil Squeezer",
+      "type": "shooter",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "splattershot_nova",
+      "name": "スペースシューター",
+      "nameEn": "Splattershot Nova",
+      "type": "shooter",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "annaki_splattershot_nova",
+      "name": "スペースシューターコラボ",
+      "nameEn": "Annaki Splattershot Nova",
+      "type": "shooter",
+      "subWeapon": "トラップ",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "range_blaster",
+      "name": "ロングブラスター",
+      "nameEn": "Range Blaster",
+      "type": "blaster",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "blaster",
+      "name": "ホットブラスター",
+      "nameEn": "Blaster",
+      "type": "blaster",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "custom_blaster",
+      "name": "ホットブラスターカスタム",
+      "nameEn": "Custom Blaster",
+      "type": "blaster",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "gleamz_blaster",
+      "name": "ホットブラスター艶",
+      "nameEn": "Gleamz Blaster",
+      "type": "blaster",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "clash_blaster",
+      "name": "クラッシュブラスター",
+      "nameEn": "Clash Blaster",
+      "type": "blaster",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "clash_blaster_neo",
+      "name": "クラッシュブラスターネオ",
+      "nameEn": "Clash Blaster Neo",
+      "type": "blaster",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "rapid_blaster_pro",
+      "name": "Rブラスターエリート",
+      "nameEn": "Rapid Blaster Pro",
+      "type": "blaster",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "rapid_blaster_pro_deco",
+      "name": "Rブラスターエリートデコ",
+      "nameEn": "Rapid Blaster Pro Deco",
+      "type": "blaster",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "rapid_blaster_pro_wnt_r",
+      "name": "RブラスターエリートWNTR",
+      "nameEn": "Rapid Blaster Pro WNT-R",
+      "type": "blaster",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "luna_blaster",
+      "name": "ノヴァブラスター",
+      "nameEn": "Luna Blaster",
+      "type": "blaster",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "luna_blaster_neo",
+      "name": "ノヴァブラスターネオ",
+      "nameEn": "Luna Blaster Neo",
+      "type": "blaster",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "order_blaster_replica",
+      "name": "オーダーブラスター レプリカ",
+      "nameEn": "Order Blaster Replica",
+      "type": "blaster",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "rapid_blaster",
+      "name": "ラピッドブラスター",
+      "nameEn": "Rapid Blaster",
+      "type": "blaster",
+      "subWeapon": "トラップ",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "rapid_blaster_deco",
+      "name": "ラピッドブラスターデコ",
+      "nameEn": "Rapid Blaster Deco",
+      "type": "blaster",
+      "subWeapon": "トーピード",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "s_blast_92",
+      "name": "S-BLAST92",
+      "nameEn": "S-BLAST '92",
+      "type": "blaster",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "s_blast_91",
+      "name": "S-BLAST91",
+      "nameEn": "S-BLAST '91",
+      "type": "blaster",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "custom_range_blaster",
+      "name": "ロングブラスターカスタム",
+      "nameEn": "Custom Range Blaster",
+      "type": "blaster",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "dynamo_roller",
+      "name": "ダイナモローラー",
+      "nameEn": "Dynamo Roller",
+      "type": "roller",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "gold_dynamo_roller",
+      "name": "ダイナモローラーテスラ",
+      "nameEn": "Gold Dynamo Roller",
+      "type": "roller",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "starz_dynamo_roller",
+      "name": "ダイナモローラー冥",
+      "nameEn": "Starz Dynamo Roller",
+      "type": "roller",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "splat_roller",
+      "name": "スプラローラー",
+      "nameEn": "Splat Roller",
+      "type": "roller",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "krak_on_splat_roller",
+      "name": "スプラローラーコラボ",
+      "nameEn": "Krak-On Splat Roller",
+      "type": "roller",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "order_roller_replica",
+      "name": "オーダーローラー レプリカ",
+      "nameEn": "Order Roller Replica",
+      "type": "roller",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "flingza_roller",
+      "name": "ヴァリアブルローラー",
+      "nameEn": "Flingza Roller",
+      "type": "roller",
+      "subWeapon": "トラップ",
+      "specialWeapon": "マルチミサイル"
+    },
+    {
+      "id": "foil_flingza_roller",
+      "name": "ヴァリアブルローラーフォイル",
+      "nameEn": "Foil Flingza Roller",
+      "type": "roller",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "carbon_roller",
+      "name": "カーボンローラー",
+      "nameEn": "Carbon Roller",
+      "type": "roller",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "carbon_roller_deco",
+      "name": "カーボンローラーデコ",
+      "nameEn": "Carbon Roller Deco",
+      "type": "roller",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "carbon_roller_ang_l",
+      "name": "カーボンローラーANGL",
+      "nameEn": "Carbon Roller ANG-L",
+      "type": "roller",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "big_swig_roller",
+      "name": "ワイドローラー",
+      "nameEn": "Big Swig Roller",
+      "type": "roller",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "big_swig_roller_express",
+      "name": "ワイドローラーコラボ",
+      "nameEn": "Big Swig Roller Express",
+      "type": "roller",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "planetz_big_swig_roller",
+      "name": "ワイドローラー惑",
+      "nameEn": "Planetz Big Swig Roller",
+      "type": "roller",
+      "subWeapon": "トーピード",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "inkbrush",
+      "name": "パブロ",
+      "nameEn": "Inkbrush",
+      "type": "brush",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "inkbrush_nouveau",
+      "name": "パブロ・ヒュー",
+      "nameEn": "Inkbrush Nouveau",
+      "type": "brush",
+      "subWeapon": "トラップ",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "octobrush",
+      "name": "ホクサイ",
+      "nameEn": "Octobrush",
+      "type": "brush",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "octobrush_nouveau",
+      "name": "ホクサイ・ヒュー",
+      "nameEn": "Octobrush Nouveau",
+      "type": "brush",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "orderbrush_replica",
+      "name": "オーダーブラシ レプリカ",
+      "nameEn": "Orderbrush Replica",
+      "type": "brush",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "cometz_octobrush",
+      "name": "ホクサイ彗",
+      "nameEn": "Cometz Octobrush",
+      "type": "brush",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "painbrush",
+      "name": "フィンセント",
+      "nameEn": "Painbrush",
+      "type": "brush",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "painbrush_nouveau",
+      "name": "フィンセント・ヒュー",
+      "nameEn": "Painbrush Nouveau",
+      "type": "brush",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "マルチミサイル"
+    },
+    {
+      "id": "painbrush_brn_z",
+      "name": "フィンセントBRNZ",
+      "nameEn": "Painbrush BRN-Z",
+      "type": "brush",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "e_liter_4k",
+      "name": "リッター4K",
+      "nameEn": "E-liter 4K",
+      "type": "charger",
+      "subWeapon": "トラップ",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "custom_e_liter_4k",
+      "name": "リッター4Kカスタム",
+      "nameEn": "Custom E-liter 4K",
+      "type": "charger",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "custom_e_liter_4k_scope",
+      "name": "4Kスコープカスタム",
+      "nameEn": "Custom E-liter 4K Scope",
+      "type": "charger",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "splat_charger",
+      "name": "スプラチャージャー",
+      "nameEn": "Splat Charger",
+      "type": "charger",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "zf_splat_charger",
+      "name": "スプラチャージャーコラボ",
+      "nameEn": "Z+F Splat Charger",
+      "type": "charger",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "order_charger_replica",
+      "name": "オーダーチャージャー レプリカ",
+      "nameEn": "Order Charger Replica",
+      "type": "charger",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "splat_charger_cam_o",
+      "name": "スプラチャージャーFRST",
+      "nameEn": "Splat Charger CAM-O",
+      "type": "charger",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "bamboozler_14_mk_i",
+      "name": "14式竹筒銃・甲",
+      "nameEn": "Bamboozler 14 Mk I",
+      "type": "charger",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "classic_squiffer",
+      "name": "スクイックリンα",
+      "nameEn": "Classic Squiffer",
+      "type": "charger",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "new_squiffer",
+      "name": "スクイックリンβ",
+      "nameEn": "New Squiffer",
+      "type": "charger",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "goo_tuber",
+      "name": "ソイチューバー",
+      "nameEn": "Goo Tuber",
+      "type": "charger",
+      "subWeapon": "トーピード",
+      "specialWeapon": "マルチミサイル"
+    },
+    {
+      "id": "custom_goo_tuber",
+      "name": "ソイチューバーカスタム",
+      "nameEn": "Custom Goo Tuber",
+      "type": "charger",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "splatterscope",
+      "name": "スプラスコープ",
+      "nameEn": "Splatterscope",
+      "type": "charger",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "zf_splatterscope",
+      "name": "スプラスコープコラボ",
+      "nameEn": "Z+F Splatterscope",
+      "type": "charger",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "splatterscope_cam_o",
+      "name": "スプラスコープFRST",
+      "nameEn": "Splatterscope CAM-O",
+      "type": "charger",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "e_liter_4k_scope",
+      "name": "4Kスコープ",
+      "nameEn": "E-liter 4K Scope",
+      "type": "charger",
+      "subWeapon": "トラップ",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "snipewriter_5h",
+      "name": "R-PEN/5H",
+      "nameEn": "Snipewriter 5H",
+      "type": "charger",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "snipewriter_5b",
+      "name": "R-PEN/5B",
+      "nameEn": "Snipewriter 5B",
+      "type": "charger",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "bamboozler_14_mk_ii",
+      "name": "14式竹筒銃・乙",
+      "nameEn": "Bamboozler 14 Mk II",
+      "type": "charger",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "sloshing_machine",
+      "name": "スクリュースロッシャー",
+      "nameEn": "Sloshing Machine",
+      "type": "slosher",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "sloshing_machine_neo",
+      "name": "スクリュースロッシャーネオ",
+      "nameEn": "Sloshing Machine Neo",
+      "type": "slosher",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "explosher",
+      "name": "エクスプロッシャー",
+      "nameEn": "Explosher",
+      "type": "slosher",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "custom_explosher",
+      "name": "エクスプロッシャーカスタム",
+      "nameEn": "Custom Explosher",
+      "type": "slosher",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "bloblobber",
+      "name": "オーバーフロッシャー",
+      "nameEn": "Bloblobber",
+      "type": "slosher",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "bloblobber_deco",
+      "name": "オーバーフロッシャーデコ",
+      "nameEn": "Bloblobber Deco",
+      "type": "slosher",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "slosher",
+      "name": "バケットスロッシャー",
+      "nameEn": "Slosher",
+      "type": "slosher",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "slosher_deco",
+      "name": "バケットスロッシャーデコ",
+      "nameEn": "Slosher Deco",
+      "type": "slosher",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "order_slosher_replica",
+      "name": "オーダースロッシャー レプリカ",
+      "nameEn": "Order Slosher Replica",
+      "type": "slosher",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "tri_slosher",
+      "name": "ヒッセン",
+      "nameEn": "Tri-Slosher",
+      "type": "slosher",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "tri_slosher_nouveau",
+      "name": "ヒッセン・ヒュー",
+      "nameEn": "Tri-Slosher Nouveau",
+      "type": "slosher",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "tri_slosher_ash_n",
+      "name": "ヒッセンASH",
+      "nameEn": "Tri-Slosher ASH-N",
+      "type": "slosher",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "dread_wringer",
+      "name": "モップリン",
+      "nameEn": "Dread Wringer",
+      "type": "slosher",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "dread_wringer_d",
+      "name": "モップリンD",
+      "nameEn": "Dread Wringer D",
+      "type": "slosher",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "hornz_dread_wringer",
+      "name": "モップリン角",
+      "nameEn": "Hornz Dread Wringer",
+      "type": "slosher",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "hydra_splatling",
+      "name": "ハイドラント",
+      "nameEn": "Hydra Splatling",
+      "type": "splatling",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "torrentz_hydra_splatling",
+      "name": "ハイドラント圧",
+      "nameEn": "Torrentz Hydra Splatling",
+      "type": "splatling",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "ballpoint_splatling",
+      "name": "クーゲルシュライバー",
+      "nameEn": "Ballpoint Splatling",
+      "type": "splatling",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "ballpoint_splatling_nouveau",
+      "name": "クーゲルシュライバー・ヒュー",
+      "nameEn": "Ballpoint Splatling Nouveau",
+      "type": "splatling",
+      "subWeapon": "トラップ",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "mini_splatling",
+      "name": "スプラスピナー",
+      "nameEn": "Mini Splatling",
+      "type": "splatling",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "zink_mini_splatling",
+      "name": "スプラスピナーコラボ",
+      "nameEn": "Zink Mini Splatling",
+      "type": "splatling",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "mini_splatling_rtl_r",
+      "name": "スプラスピナーPYTN",
+      "nameEn": "Mini Splatling RTL-R",
+      "type": "splatling",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "nautilus_47",
+      "name": "ノーチラス47",
+      "nameEn": "Nautilus 47",
+      "type": "splatling",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "アメフラシ"
+    },
+    {
+      "id": "nautilus_79",
+      "name": "ノーチラス79",
+      "nameEn": "Nautilus 79",
+      "type": "splatling",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "heavy_splatling",
+      "name": "バレルスピナー",
+      "nameEn": "Heavy Splatling",
+      "type": "splatling",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "heavy_splatling_deco",
+      "name": "バレルスピナーデコ",
+      "nameEn": "Heavy Splatling Deco",
+      "type": "splatling",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "テイオウイカ"
+    },
+    {
+      "id": "order_splatling_replica",
+      "name": "オーダースピナー レプリカ",
+      "nameEn": "Order Splatling Replica",
+      "type": "splatling",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "heavy_edit_splatling",
+      "name": "イグザミナー",
+      "nameEn": "Heavy Edit Splatling",
+      "type": "splatling",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "heavy_edit_splatling_nouveau",
+      "name": "イグザミナー・ヒュー",
+      "nameEn": "Heavy Edit Splatling Nouveau",
+      "type": "splatling",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "custom_hydra_splatling",
+      "name": "ハイドラントカスタム",
+      "nameEn": "Custom Hydra Splatling",
+      "type": "splatling",
+      "subWeapon": "トラップ",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "glooga_dualies",
+      "name": "ケルビン525",
+      "nameEn": "Glooga Dualies",
+      "type": "dualies",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "glooga_dualies_deco",
+      "name": "ケルビン525デコ",
+      "nameEn": "Glooga Dualies Deco",
+      "type": "dualies",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "dark_tetra_dualies",
+      "name": "クアッドホッパーブラック",
+      "nameEn": "Dark Tetra Dualies",
+      "type": "dualies",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "light_tetra_dualies",
+      "name": "クアッドホッパーホワイト",
+      "nameEn": "Light Tetra Dualies",
+      "type": "dualies",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "dapple_dualies",
+      "name": "スパッタリー",
+      "nameEn": "Dapple Dualies",
+      "type": "dualies",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "エナジースタンド"
+    },
+    {
+      "id": "dapple_dualies_nouveau",
+      "name": "スパッタリー・ヒュー",
+      "nameEn": "Dapple Dualies Nouveau",
+      "type": "dualies",
+      "subWeapon": "トーピード",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "dapple_dualies_noc_t",
+      "name": "スパッタリーOWL",
+      "nameEn": "Dapple Dualies NOC-T",
+      "type": "dualies",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "splat_dualies",
+      "name": "スプラマニューバー",
+      "nameEn": "Splat Dualies",
+      "type": "dualies",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "enperry_splat_dualies",
+      "name": "スプラマニューバーコラボ",
+      "nameEn": "Enperry Splat Dualies",
+      "type": "dualies",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "order_dualie_replicas",
+      "name": "オーダーマニューバー レプリカ",
+      "nameEn": "Order Dualie Replicas",
+      "type": "dualies",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "twinklez_splat_dualies",
+      "name": "スプラマニューバー耀",
+      "nameEn": "Twinklez Splat Dualies",
+      "type": "dualies",
+      "subWeapon": "タンサンボム",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "dualie_squelchers",
+      "name": "デュアルスイーパー",
+      "nameEn": "Dualie Squelchers",
+      "type": "dualies",
+      "subWeapon": "スプラッシュボム",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "custom_dualie_squelchers",
+      "name": "デュアルスイーパーカスタム",
+      "nameEn": "Custom Dualie Squelchers",
+      "type": "dualies",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "hoofz_dualie_squelchers",
+      "name": "デュアルスイーパー蹄",
+      "nameEn": "Hoofz Dualie Squelchers",
+      "type": "dualies",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "douser_dualies_ff",
+      "name": "ガエンFF",
+      "nameEn": "Douser Dualies FF",
+      "type": "dualies",
+      "subWeapon": "トラップ",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "custom_douser_dualies_ff",
+      "name": "ガエンFFカスタム",
+      "nameEn": "Custom Douser Dualies FF",
+      "type": "dualies",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "undercover_brella",
+      "name": "スパイガジェット",
+      "nameEn": "Undercover Brella",
+      "type": "brella",
+      "subWeapon": "トラップ",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "undercover_sorella_brella",
+      "name": "スパイガジェットソレーラ",
+      "nameEn": "Undercover Sorella Brella",
+      "type": "brella",
+      "subWeapon": "トーピード",
+      "specialWeapon": "スミナガシート"
+    },
+    {
+      "id": "patternz_undercover_brella",
+      "name": "スパイガジェット繚",
+      "nameEn": "Patternz Undercover Brella",
+      "type": "brella",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "tenta_brella",
+      "name": "キャンピングシェルター",
+      "nameEn": "Tenta Brella",
+      "type": "brella",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "キューインキ"
+    },
+    {
+      "id": "tenta_sorella_brella",
+      "name": "キャンピングシェルターソレーラ",
+      "nameEn": "Tenta Sorella Brella",
+      "type": "brella",
+      "subWeapon": "トラップ",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "tenta_brella_cre_m",
+      "name": "キャンピングシェルターCREM",
+      "nameEn": "Tenta Brella CRE-M",
+      "type": "brella",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "splat_brella",
+      "name": "パラシェルター",
+      "nameEn": "Splat Brella",
+      "type": "brella",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "sorella_brella",
+      "name": "パラシェルターソレーラ",
+      "nameEn": "Sorella Brella",
+      "type": "brella",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "order_brella_replica",
+      "name": "オーダーパラシェルター レプリカ",
+      "nameEn": "オーダーパラシェルター レプリカ",
+      "type": "brella",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "トリプルトルネード"
+    },
+    {
+      "id": "recycled_brella_24_mk_i",
+      "name": "24式張替傘・甲",
+      "nameEn": "Recycled Brella 24 Mk I",
+      "type": "brella",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "recycled_brella_24_mk_ii",
+      "name": "24式張替傘・乙",
+      "nameEn": "Recycled Brella 24 Mk II",
+      "type": "brella",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "ウルトラチャクチ"
+    },
+    {
+      "id": "tri_stringer",
+      "name": "トライストリンガー",
+      "nameEn": "Tri-Stringer",
+      "type": "stringer",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "inkline_tri_stringer",
+      "name": "トライストリンガーコラボ",
+      "nameEn": "Inkline Tri-Stringer",
+      "type": "stringer",
+      "subWeapon": "スプリンクラー",
+      "specialWeapon": "デコイチラシ"
+    },
+    {
+      "id": "order_stringer_replica",
+      "name": "オーダーストリンガー レプリカ",
+      "nameEn": "Order Stringer Replica",
+      "type": "stringer",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "メガホンレーザー5.1ch"
+    },
+    {
+      "id": "bulbz_tri_stringer",
+      "name": "トライストリンガー燈",
+      "nameEn": "Bulbz Tri-Stringer",
+      "type": "stringer",
+      "subWeapon": "ラインマーカー",
+      "specialWeapon": "ジェットパック"
+    },
+    {
+      "id": "reef_lux_450",
+      "name": "LACT-450",
+      "nameEn": "REEF-LUX 450",
+      "type": "stringer",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "マルチミサイル"
+    },
+    {
+      "id": "reef_lux_450_deco",
+      "name": "LACT-450デコ",
+      "nameEn": "REEF-LUX 450 Deco",
+      "type": "stringer",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "サメライド"
+    },
+    {
+      "id": "reef_lux_450_mil_k",
+      "name": "LACT-450MILK",
+      "nameEn": "REEF-LUX 450 MIL-K",
+      "type": "stringer",
+      "subWeapon": "トーピード",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "wellstring_v",
+      "name": "フルイドV",
+      "nameEn": "Wellstring V",
+      "type": "stringer",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "custom_wellstring_v",
+      "name": "フルイドVカスタム",
+      "nameEn": "Custom Wellstring V",
+      "type": "stringer",
+      "subWeapon": "ポイントセンサー",
+      "specialWeapon": "ホップソナー"
+    },
+    {
+      "id": "splatana_wiper",
+      "name": "ドライブワイパー",
+      "nameEn": "Splatana Wiper",
+      "type": "splatana",
+      "subWeapon": "トーピード",
+      "specialWeapon": "ウルトラハンコ"
+    },
+    {
+      "id": "splatana_wiper_deco",
+      "name": "ドライブワイパーデコ",
+      "nameEn": "Splatana Wiper Deco",
+      "type": "splatana",
+      "subWeapon": "ジャンプビーコン",
+      "specialWeapon": "マルチミサイル"
+    },
+    {
+      "id": "splatana_wiper_rus_t",
+      "name": "ドライブワイパーRUST",
+      "nameEn": "Splatana Wiper RUS-T",
+      "type": "splatana",
+      "subWeapon": "カーリングボム",
+      "specialWeapon": "ウルトラショット"
+    },
+    {
+      "id": "splatana_stamper",
+      "name": "ジムワイパー",
+      "nameEn": "Splatana Stamper",
+      "type": "splatana",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "splatana_stamper_nouveau",
+      "name": "ジムワイパー・ヒュー",
+      "nameEn": "Splatana Stamper Nouveau",
+      "type": "splatana",
+      "subWeapon": "ポイズンミスト",
+      "specialWeapon": "カニタンク"
+    },
+    {
+      "id": "order_splatana_replica",
+      "name": "オーダーワイパー レプリカ",
+      "nameEn": "Order Splatana Replica",
+      "type": "splatana",
+      "subWeapon": "クイックボム",
+      "specialWeapon": "ショクワンダー"
+    },
+    {
+      "id": "stickerz_splatana_stamper",
+      "name": "ジムワイパー封",
+      "nameEn": "Stickerz Splatana Stamper",
+      "type": "splatana",
+      "subWeapon": "ロボットボム",
+      "specialWeapon": "ナイスダマ"
+    },
+    {
+      "id": "mint_decavitator",
+      "name": "デンタルワイパーミント",
+      "nameEn": "Mint Decavitator",
+      "type": "splatana",
+      "subWeapon": "キューバンボム",
+      "specialWeapon": "グレートバリア"
+    },
+    {
+      "id": "charcoal_decavitator",
+      "name": "デンタルワイパースミ",
+      "nameEn": "Charcoal Decavitator",
+      "type": "splatana",
+      "subWeapon": "スプラッシュシールド",
+      "specialWeapon": "ジェットパック"
+    }
+  ]
+}

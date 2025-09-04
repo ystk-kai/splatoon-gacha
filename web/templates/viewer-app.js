@@ -1,11 +1,5 @@
 const { useState, useEffect } = React;
 
-// ID生成ユーティリティを読み込み
-const script = document.createElement('script');
-script.src = '/utils/id-generator.js';
-script.async = false;
-document.head.appendChild(script);
-
 const ViewerApp = () => {
   const [config, setConfig] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -91,6 +85,80 @@ const ViewerApp = () => {
       default:
         return weapons;
     }
+  };
+
+  // Helper functions with fallback for WeaponUtils
+  const getLocalSubWeaponLabel = (sub) => {
+    const labels = {
+      splat_bomb: 'スプラッシュボム',
+      suction_bomb: 'キューバンボム',
+      burst_bomb: 'クイックボム',
+      curling_bomb: 'カーリングボム',
+      autobomb: 'ロボットボム',
+      ink_mine: 'トラップ',
+      toxic_mist: 'ポイズンミスト',
+      point_sensor: 'ポイントセンサー',
+      splash_wall: 'スプラッシュシールド',
+      sprinkler: 'スプリンクラー',
+      squid_beakon: 'ジャンプビーコン',
+      fizzy_bomb: 'タンサンボム',
+      torpedo: 'トーピード',
+      angle_shooter: 'ラインマーカー'
+    };
+    return labels[sub] || sub;
+  };
+
+  const getLocalSpecialWeaponLabel = (special) => {
+    const labels = {
+      trizooka: 'ウルトラショット',
+      big_bubbler: 'グレートバリア',
+      zipcaster: 'ショクワンダー',
+      tenta_missiles: 'マルチミサイル',
+      ink_storm: 'アメフラシ',
+      booyah_bomb: 'ナイスダマ',
+      wave_breaker: 'ホップソナー',
+      ink_vac: 'キューインキ',
+      killer_wail_5_1: 'メガホンレーザー5.1ch',
+      inkjet: 'ジェットパック',
+      ultra_stamp: 'ウルトラハンコ',
+      crab_tank: 'カニタンク',
+      reefslider: 'サメライド',
+      triple_inkstrike: 'トリプルトルネード',
+      tacticooler: 'エナジースタンド',
+      splattercolor_screen: 'スミナガシート',
+      triple_splashdown: 'ウルトラチャクチ',
+      super_chump: 'デコイチラシ',
+      kraken_royale: 'テイオウイカ'
+    };
+    return labels[special] || special;
+  };
+
+  const getLocalWeaponTypeLabel = (type) => {
+    const labels = {
+      shooter: 'シューター',
+      roller: 'ローラー',
+      charger: 'チャージャー',
+      slosher: 'スロッシャー',
+      splatling: 'スピナー',
+      dualies: 'マニューバー',
+      brella: 'シェルター',
+      blaster: 'ブラスター',
+      stringer: 'ストリンガー',
+      splatana: 'ワイパー'
+    };
+    return labels[type] || type;
+  };
+
+  const getSubWeaponLabel = (sub) => {
+    return getLocalSubWeaponLabel(sub);
+  };
+
+  const getSpecialWeaponLabel = (special) => {
+    return getLocalSpecialWeaponLabel(special);
+  };
+
+  const getWeaponTypeLabel = (type) => {
+    return getLocalWeaponTypeLabel(type);
   };
 
   // 現在のガチャモードでの有効武器数を計算
@@ -675,23 +743,6 @@ const ViewerApp = () => {
   };
 
   // ラベル取得関数
-  const getWeaponTypeLabel = (type) => {
-    const labels = {
-      shooter: 'シューター',
-      roller: 'ローラー',
-      charger: 'チャージャー',
-      slosher: 'スロッシャー',
-      splatling: 'スピナー',
-      dualies: 'マニューバー',
-      brella: 'シェルター',
-      blaster: 'ブラスター',
-      brush: 'フデ',
-      stringer: 'ストリンガー',
-      splatana: 'ワイパー',
-    };
-    return labels[type] || type;
-  };
-
   // フィルタリング説明文を取得する関数
   const getFilterDescription = () => {
     switch (selectedGachaMode) {
@@ -706,51 +757,6 @@ const ViewerApp = () => {
       default:
         return 'すべての武器';
     }
-  };
-
-  const getSubWeaponLabel = (sub) => {
-    const labels = {
-      splat_bomb: 'スプラッシュボム',
-      suction_bomb: 'キューバンボム',
-      burst_bomb: 'クイックボム',
-      curling_bomb: 'カーリングボム',
-      autobomb: 'ロボットボム',
-      ink_mine: 'トラップ',
-      toxic_mist: 'ポイズンミスト',
-      point_sensor: 'ポイントセンサー',
-      splash_wall: 'スプラッシュシールド',
-      sprinkler: 'スプリンクラー',
-      squid_beakon: 'ジャンプビーコン',
-      fizzy_bomb: 'タンサンボム',
-      torpedo: 'トーピード',
-      angle_shooter: 'ラインマーカー',
-    };
-    return labels[sub] || sub;
-  };
-
-  const getSpecialWeaponLabel = (special) => {
-    const labels = {
-      trizooka: 'ウルトラショット',
-      big_bubbler: 'グレートバリア',
-      zipcaster: 'ショクワンダー',
-      tenta_missiles: 'マルチミサイル',
-      ink_storm: 'アメフラシ',
-      booyah_bomb: 'ナイスダマ',
-      wave_breaker: 'ホップソナー',
-      ink_vac: 'キューインキ',
-      killer_wail_5_1: 'メガホンレーザー5.1ch',
-      inkjet: 'ジェットパック',
-      ultra_stamp: 'ウルトラハンコ',
-      crab_tank: 'カニタンク',
-      reefslider: 'サメライド',
-      triple_inkstrike: 'トリプルトルネード',
-      tacticooler: 'エナジースタンド',
-      splattercolor_screen: 'スミナガシート',
-      triple_splashdown: 'ウルトラチャクチ',
-      super_chump: 'デコイチラシ',
-      kraken_royale: 'テイオウイカ',
-    };
-    return labels[special] || special;
   };
 
   if (loading) {

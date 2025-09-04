@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getHtmlHead, getWeaponLabels } = require('../utils/html-builder');
+const { getImageUrl, getWeaponImageUrl, getLogoImageUrl, getCapsulesImageUrl } = require('../utils/cdn');
 
 function setupDashboardRoute(fastify) {
   fastify.get('/dashboard', async (request, reply) => {
@@ -28,6 +29,21 @@ ${getHtmlHead('Splatoon Gacha - ダッシュボード')}
 
   <script type="text/babel">
     ${getWeaponLabels()}
+    
+    // CDN configuration
+    const CDN_BASE_URL = '${process.env.CDN_BASE_URL || ''}';
+    
+    // Image URL helper functions
+    const getImageUrl = (imagePath) => {
+      if (!CDN_BASE_URL) return imagePath;
+      const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+      const cleanCdnUrl = CDN_BASE_URL.endsWith('/') ? CDN_BASE_URL.slice(0, -1) : CDN_BASE_URL;
+      return \`\${cleanCdnUrl}/\${cleanPath}\`;
+    };
+    
+    const getWeaponImageUrl = (weaponId) => getImageUrl(\`/images/weapons/\${weaponId}.png\`);
+    const getLogoImageUrl = () => getImageUrl('/images/splatoon_gacha_logo.png');
+    const getCapsulesImageUrl = () => getImageUrl('/images/multiple_capsules.png');
     
     // 共通コンポーネントを読み込み
     ${weaponSelectionModalCode}

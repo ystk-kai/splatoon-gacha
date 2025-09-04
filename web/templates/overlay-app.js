@@ -1,3 +1,25 @@
+// ユーティリティを読み込み
+const weaponUtilsScript = document.createElement('script');
+weaponUtilsScript.src = '/utils/weapon-utils.js';
+weaponUtilsScript.async = false;
+document.head.appendChild(weaponUtilsScript);
+
+// WeaponUtilsが利用可能になるまで待機
+const ensureWeaponUtils = () => {
+  return new Promise((resolve) => {
+    if (window.WeaponUtils) {
+      resolve();
+    } else {
+      const checkInterval = setInterval(() => {
+        if (window.WeaponUtils) {
+          clearInterval(checkInterval);
+          resolve();
+        }
+      }, 10);
+    }
+  });
+};
+
 let ws = null;
 let reconnectTimeout = null;
 let overlayConfig = {
@@ -248,67 +270,7 @@ function showMultipleWeapons(result, playerNames = []) {
   // タイマーはshowGachaResult関数で管理されるので、ここでは設定しない
 }
 
-function getSubWeaponLabel(sub) {
-  const labels = {
-    splat_bomb: 'スプラッシュボム',
-    suction_bomb: 'キューバンボム',
-    burst_bomb: 'クイックボム',
-    curling_bomb: 'カーリングボム',
-    autobomb: 'ロボットボム',
-    ink_mine: 'トラップ',
-    toxic_mist: 'ポイズンミスト',
-    point_sensor: 'ポイントセンサー',
-    splash_wall: 'スプラッシュシールド',
-    sprinkler: 'スプリンクラー',
-    squid_beakon: 'ジャンプビーコン',
-    fizzy_bomb: 'タンサンボム',
-    torpedo: 'トーピード',
-    angle_shooter: 'ラインマーカー',
-  };
-  return labels[sub] || sub;
-}
-
-function getWeaponTypeLabel(type) {
-  const labels = {
-    shooter: 'シューター',
-    roller: 'ローラー',
-    charger: 'チャージャー',
-    slosher: 'スロッシャー',
-    splatling: 'スピナー',
-    dualies: 'マニューバー',
-    brella: 'シェルター',
-    blaster: 'ブラスター',
-    brush: 'フデ',
-    stringer: 'ストリンガー',
-    splatana: 'ワイパー',
-  };
-  return labels[type] || type;
-}
-
-function getSpecialWeaponLabel(special) {
-  const labels = {
-    trizooka: 'ウルトラショット',
-    big_bubbler: 'グレートバリア',
-    zipcaster: 'ショクワンダー',
-    tenta_missiles: 'マルチミサイル',
-    ink_storm: 'アメフラシ',
-    booyah_bomb: 'ナイスダマ',
-    wave_breaker: 'ホップソナー',
-    ink_vac: 'キューインキ',
-    killer_wail_5_1: 'メガホンレーザー5.1ch',
-    inkjet: 'ジェットパック',
-    ultra_stamp: 'ウルトラハンコ',
-    crab_tank: 'カニタンク',
-    reefslider: 'サメライド',
-    triple_inkstrike: 'トリプルトルネード',
-    tacticooler: 'エナジースタンド',
-    splattercolor_screen: 'スミナガシート',
-    triple_splashdown: 'ウルトラチャクチ',
-    super_chump: 'デコイチラシ',
-    kraken_royale: 'テイオウイカ',
-  };
-  return labels[special] || special;
-}
+// WeaponUtilsから関数を使用
 
 function adjustTextSize(element) {
   const maxWidth = element.parentElement.offsetWidth - 40; // パディング分を引く
@@ -533,8 +495,8 @@ if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     connect,
     showGachaResult,
-    getSubWeaponLabel,
-    getSpecialWeaponLabel,
+    getSubWeaponLabel: window.WeaponUtils?.getSubWeaponLabel,
+    getSpecialWeaponLabel: window.WeaponUtils?.getSpecialWeaponLabel,
     adjustTextSize,
     clearGachaDisplay,
     showInkEffects,

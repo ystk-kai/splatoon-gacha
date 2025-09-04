@@ -1,11 +1,5 @@
 const { useState, useEffect } = React;
 
-// ID生成ユーティリティを読み込み
-const script = document.createElement('script');
-script.src = '/utils/id-generator.js';
-script.async = false;
-document.head.appendChild(script);
-
 const ControlApp = () => {
   const [currentWeapon, setCurrentWeapon] = useState(null);
   const [isSpinning, setIsSpinning] = useState(false);
@@ -92,15 +86,97 @@ const ControlApp = () => {
     }
   };
 
+  // Helper functions with fallback for WeaponUtils
+  const getLocalSpecialWeaponLabel = (special) => {
+    const labels = {
+      trizooka: 'ウルトラショット',
+      big_bubbler: 'グレートバリア',
+      zipcaster: 'ショクワンダー',
+      tenta_missiles: 'マルチミサイル',
+      ink_storm: 'アメフラシ',
+      booyah_bomb: 'ナイスダマ',
+      wave_breaker: 'ホップソナー',
+      ink_vac: 'キューインキ',
+      killer_wail_5_1: 'メガホンレーザー5.1ch',
+      inkjet: 'ジェットパック',
+      ultra_stamp: 'ウルトラハンコ',
+      crab_tank: 'カニタンク',
+      reefslider: 'サメライド',
+      triple_inkstrike: 'トリプルトルネード',
+      tacticooler: 'エナジースタンド',
+      splattercolor_screen: 'スミナガシート',
+      triple_splashdown: 'ウルトラチャクチ',
+      super_chump: 'デコイチラシ',
+      kraken_royale: 'テイオウイカ',
+    };
+    return labels[special] || special;
+  };
+
+  const getLocalSubWeaponLabel = (sub) => {
+    const labels = {
+      splat_bomb: 'スプラッシュボム',
+      suction_bomb: 'キューバンボム',
+      burst_bomb: 'クイックボム',
+      curling_bomb: 'カーリングボム',
+      autobomb: 'ロボットボム',
+      ink_mine: 'トラップ',
+      toxic_mist: 'ポイズンミスト',
+      point_sensor: 'ポイントセンサー',
+      splash_wall: 'スプラッシュシールド',
+      sprinkler: 'スプリンクラー',
+      squid_beakon: 'ジャンプビーコン',
+      fizzy_bomb: 'タンサンボム',
+      torpedo: 'トーピード',
+      angle_shooter: 'ラインマーカー',
+    };
+    return labels[sub] || sub;
+  };
+
+  const getLocalWeaponTypeLabel = (type) => {
+    const labels = {
+      shooter: 'シューター',
+      roller: 'ローラー',
+      charger: 'チャージャー',
+      slosher: 'スロッシャー',
+      splatling: 'スピナー',
+      dualies: 'マニューバー',
+      brella: 'シェルター',
+      blaster: 'ブラスター',
+      brush: 'フデ',
+      stringer: 'ストリンガー',
+      splatana: 'ワイパー',
+    };
+    return labels[type] || type;
+  };
+
+  // Safe wrapper functions that use WeaponUtils if available, otherwise fallback
+  const safeGetSpecialWeaponLabel = (special) => {
+    return window.WeaponUtils?.getSpecialWeaponLabel ? 
+      safeGetSpecialWeaponLabel(special) : 
+      getLocalSpecialWeaponLabel(special);
+  };
+
+  const safeGetSubWeaponLabel = (sub) => {
+    return window.WeaponUtils?.getSubWeaponLabel ? 
+      safeGetSubWeaponLabel(sub) : 
+      getLocalSubWeaponLabel(sub);
+  };
+
+  const safeGetWeaponTypeLabel = (type) => {
+    return window.WeaponUtils?.getWeaponTypeLabel ? 
+      window.WeaponUtils.getWeaponTypeLabel(type) : 
+      getLocalWeaponTypeLabel(type);
+  };
+
   // ガチャモードに応じた武器フィルタリング関数
   const getFilteredWeapons = (weapons) => {
     if (!weapons) return [];
     
     switch (gachaMode) {
       case 'sub':
-        return weapons.filter(weapon => weapon.subWeapon === getSubWeaponLabel(subWeaponFilter));
+        return weapons.filter(weapon => weapon.subWeapon === safeGetSubWeaponLabel(subWeaponFilter));
       case 'special':
-        return weapons.filter(weapon => weapon.specialWeapon === getSpecialWeaponLabel(specialWeaponFilter));
+        return weapons.filter(weapon => weapon.specialWeapon === safeGetSpecialWeaponLabel(specialWeaponFilter));
       case 'weapon-type':
         return weapons.filter(weapon => weapon.type === weaponTypeFilter);
       case 'weapon':
@@ -119,9 +195,9 @@ const ControlApp = () => {
     
     switch (gachaMode) {
       case 'sub':
-        return weapons.filter(weapon => weapon.subWeapon === getSubWeaponLabel(subWeaponFilter));
+        return weapons.filter(weapon => weapon.subWeapon === safeGetSubWeaponLabel(subWeaponFilter));
       case 'special':
-        return weapons.filter(weapon => weapon.specialWeapon === getSpecialWeaponLabel(specialWeaponFilter));
+        return weapons.filter(weapon => weapon.specialWeapon === safeGetSpecialWeaponLabel(specialWeaponFilter));
       case 'weapon-type':
         return weapons.filter(weapon => weapon.type === weaponTypeFilter);
       case 'weapon':
@@ -1351,33 +1427,17 @@ const ControlApp = () => {
     }
   };
 
-  const getWeaponTypeLabel = (type) => {
-    const labels = {
-      shooter: 'シューター',
-      roller: 'ローラー',
-      charger: 'チャージャー',
-      slosher: 'スロッシャー',
-      splatling: 'スピナー',
-      dualies: 'マニューバー',
-      brella: 'シェルター',
-      blaster: 'ブラスター',
-      brush: 'フデ',
-      stringer: 'ストリンガー',
-      splatana: 'ワイパー',
-    };
-    return labels[type] || type;
-  };
 
 
   // フィルタリング説明文を取得する関数
   const getFilterDescription = () => {
     switch (gachaMode) {
       case 'sub':
-        return `サブ『${getSubWeaponLabel(subWeaponFilter)}』を持つ武器`;
+        return `サブ『${safeGetSubWeaponLabel(subWeaponFilter)}』を持つ武器`;
       case 'special':
-        return `スペシャル『${getSpecialWeaponLabel(specialWeaponFilter)}』を持つ武器`;
+        return `スペシャル『${safeGetSpecialWeaponLabel(specialWeaponFilter)}』を持つ武器`;
       case 'weapon-type':
-        return `武器種別『${getWeaponTypeLabel(weaponTypeFilter)}』の武器`;
+        return `武器種別『${safeGetWeaponTypeLabel(weaponTypeFilter)}』の武器`;
       case 'weapon':
         return selectedWeapons.length > 0 ? '手動選択した武器' : 'すべての武器';
       default:
@@ -2110,15 +2170,15 @@ const ControlApp = () => {
                             <div className="space-y-2 text-xs">
                               <div className="flex justify-between">
                                 <span className="text-gray-400">タイプ:</span>
-                                <span className="text-white">{getWeaponTypeLabel(currentWeapon.weapons[0].type)}</span>
+                                <span className="text-white">{safeGetWeaponTypeLabel(currentWeapon.weapons[0].type)}</span>
                               </div>
                               <div className="flex justify-between">
                                 <span className="text-gray-400">サブ:</span>
-                                <span className="text-white">{getSubWeaponLabel(currentWeapon.weapons[0].subWeapon)}</span>
+                                <span className="text-white">{safeGetSubWeaponLabel(currentWeapon.weapons[0].subWeapon)}</span>
                               </div>
                               <div className="flex justify-between">
                                 <span className="text-gray-400">スペシャル:</span>
-                                <span className="text-white">{getSpecialWeaponLabel(currentWeapon.weapons[0].specialWeapon)}</span>
+                                <span className="text-white">{safeGetSpecialWeaponLabel(currentWeapon.weapons[0].specialWeapon)}</span>
                               </div>
                             </div>
                           </div>
@@ -2190,15 +2250,15 @@ const ControlApp = () => {
                               <div className="space-y-2 text-xs">
                                 <div className="flex justify-between">
                                   <span className="text-gray-400">タイプ:</span>
-                                  <span className="text-white">{getWeaponTypeLabel(weapon.type)}</span>
+                                  <span className="text-white">{safeGetWeaponTypeLabel(weapon.type)}</span>
                                 </div>
                                 <div className="flex justify-between">
                                   <span className="text-gray-400">サブ:</span>
-                                  <span className="text-white">{getSubWeaponLabel(weapon.subWeapon)}</span>
+                                  <span className="text-white">{safeGetSubWeaponLabel(weapon.subWeapon)}</span>
                                 </div>
                                 <div className="flex justify-between">
                                   <span className="text-gray-400">スペシャル:</span>
-                                  <span className="text-white">{getSpecialWeaponLabel(weapon.specialWeapon)}</span>
+                                  <span className="text-white">{safeGetSpecialWeaponLabel(weapon.specialWeapon)}</span>
                                 </div>
                               </div>
                             </div>
@@ -2253,8 +2313,8 @@ const ControlApp = () => {
                       
                       <div className="text-3xl font-bold text-white splatoon-font text-center">
                         {(currentWeapon.weapon ? currentWeapon.weapon.name :
-                         currentWeapon.subWeapon ? getSubWeaponLabel(currentWeapon.subWeapon) :
-                         currentWeapon.specialWeapon ? getSpecialWeaponLabel(currentWeapon.specialWeapon) :
+                         currentWeapon.subWeapon ? safeGetSubWeaponLabel(currentWeapon.subWeapon) :
+                         currentWeapon.specialWeapon ? safeGetSpecialWeaponLabel(currentWeapon.specialWeapon) :
                          'Unknown')}
                       </div>
                       
@@ -2263,19 +2323,19 @@ const ControlApp = () => {
                           <div className="bg-gray-900 rounded-lg p-3">
                             <div className="text-gray-400 mb-1">タイプ</div>
                             <div className="text-white font-semibold">
-                              {getWeaponTypeLabel(currentWeapon.weapon.type)}
+                              {safeGetWeaponTypeLabel(currentWeapon.weapon.type)}
                             </div>
                           </div>
                           <div className="bg-gray-900 rounded-lg p-3">
                             <div className="text-gray-400 mb-1">サブ</div>
                             <div className="text-white font-semibold">
-                              {getSubWeaponLabel(currentWeapon.weapon.subWeapon)}
+                              {safeGetSubWeaponLabel(currentWeapon.weapon.subWeapon)}
                             </div>
                           </div>
                           <div className="bg-gray-900 rounded-lg p-3 col-span-2">
                             <div className="text-gray-400 mb-1">スペシャル</div>
                             <div className="text-white font-semibold">
-                              {getSpecialWeaponLabel(currentWeapon.weapon.specialWeapon)}
+                              {safeGetSpecialWeaponLabel(currentWeapon.weapon.specialWeapon)}
                             </div>
                           </div>
                         </div>
@@ -2305,9 +2365,9 @@ const ControlApp = () => {
           setSelectedWeapons={setSelectedWeapons}
           getFilteredWeaponsForModal={getFilteredWeaponsForModal}
           getFilterDescription={getFilterDescription}
-          getWeaponTypeLabel={getWeaponTypeLabel}
-          getSubWeaponLabel={getSubWeaponLabel}
-          getSpecialWeaponLabel={getSpecialWeaponLabel}
+          getWeaponTypeLabel={safeGetWeaponTypeLabel}
+          getSubWeaponLabel={safeGetSubWeaponLabel}
+          getSpecialWeaponLabel={safeGetSpecialWeaponLabel}
           enableScrollAnimation={true}
         />
 
