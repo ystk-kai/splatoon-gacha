@@ -65,10 +65,15 @@ npm run dev               # Vite開発サーバー
 
 ## 技術仕様
 - **Node.js**: v18以上推奨
-- **Tauri**: v2.0.0-rc.18
+- **TypeScript**: メインプロジェクト（ES2020）、Webサーバー（ES2024）、strict: true設定
+- **Tauri**: v2.0.0-rc.18（デスクトップアプリ）
 - **Fastify**: v4.0.0 + WebSocket + CORS + Static
-- **フロントエンド**: TailwindCSS v4.1.12 + PostCSS
+- **フロントエンド**: Vanilla JavaScript（React風関数型コンポーネント）+ TailwindCSS v4.1.12 + PostCSS
 - **テスト**: Playwright（E2E）+ Node.js native test（Unit）+ Vitest
+
+### ES2024採用について
+仕様書ではES2025指定ですが、安定性と互換性を考慮してES2024を選択。
+ES2025は2025年6月正式リリース予定のため、現時点ではES2024が適切。
 
 ## トラブルシューティング
 ```bash
